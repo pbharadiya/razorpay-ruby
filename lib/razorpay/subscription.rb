@@ -20,7 +20,7 @@ module Razorpay
       request.create options
     end
 
-    def cancel(id, data = {})
+    def self.cancel(id, data = {})
       request.post "#{id}/cancel", data
     end
 
