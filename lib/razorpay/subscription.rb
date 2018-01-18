@@ -23,6 +23,10 @@ module Razorpay
     def self.cancel(id, data = {})
       request.post "#{id}/cancel", data
     end
+    
+    def self.create_addon(id, data = {})
+      request.post "#{id}/addons", data
+    end
 
     def method
       method_missing(:method)
