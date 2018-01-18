@@ -5,7 +5,7 @@ module Razorpay
   # Subscription class is used to interact with Recurring charge
   class Plan < Entity
     def self.request
-      Razorpay::Request.new('subscriptions')
+      Razorpay::Request.new('plans')
     end
 
     def self.fetch(id)
